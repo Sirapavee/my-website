@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+
+%link-style {
+    box-sizing: border-box;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-family: 'Bebas Neue';
+    font-size: 1.8em;
+}
+
+.navlink {
+    @extend %link-style;
+}
+
+.inactiveLink {
+    @extend %link-style;
+    /*pointer-events: none;*/
+    cursor: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(209, 97%, 59%);
+}
+
+.inactiveLink:hover {
+    text-decoration: line-through;
+    text-decoration-color: hsl(0, 97%, 59%);
+}
