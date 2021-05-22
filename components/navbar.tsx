@@ -1,3 +1,4 @@
+import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -6,10 +7,12 @@ import { motion } from 'framer-motion'
 import styles from '../styles/navbar.module.scss'
 
 import Navlink from './navlink'
+import SideBar from './sidebar/sidebar'
 
 export default function NavigationBar() {
+
     return (
-        <div className={styles.container}>
+        <nav className={styles.container}>
             <Link href='/' key='my-logo'>
                 <a className={styles.logo}>
                     <Image
@@ -20,9 +23,10 @@ export default function NavigationBar() {
                     />
                 </a>
             </Link>
-            <nav className={styles.navbar}>
+            <div className={styles.navbar}>
                 <Navlink content={['About', 'Projects', 'Contact']} />
-            </nav>
-        </div>
+            </div>
+            <SideBar />
+        </nav>
     )
 }

@@ -1,0 +1,104 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+
+import { motion } from 'framer-motion'
+
+import styles from '../../styles/navlink.module.scss'
+
+const isPathMatchLink = (name: string) => {
+
+    let currentPage: string = useRouter().pathname;
+    
+    let pathName: string = `/${name.toLowerCase()}`
+
+    if (pathName === currentPage) {
+        return true
+    }
+
+    return false
+}
+
+const variants = {
+    opened: {
+        y: 0,
+        opacity: 1,
+        transition: {
+            y: {
+                stiffness: 100,
+                velocity: -100
+            },
+            staggerChildren: 0.07, 
+            delayChildren: 0.2
+        }
+    },
+    closed: {
+        y: 50,
+        opacity: 0,
+        transition: {
+            y: {
+                stiffness: 1000
+            },
+            staggerChildren: 0.05, 
+            staggerDirection: -1
+        }
+    },
+    whileHover: {
+        scale: 1.5,
+    },
+    inactiveHover: {
+        scale: [1, 2, 2, 2, 2, 1],
+        rotate: ['0deg', '25deg', '-25deg', '10deg', '-10deg', '0deg'],
+        transition: {
+            duration: .5,
+        },
+    }
+}
+
+const createLink = (name: string) => {
+    return (
+        <motion.div 
+            className={styles.navlinkResponsive}
+            whileHover='whileHover' 
+            whileTap='whileHover'
+            variants={variants}
+        >
+            <Link href={`/${name.toLowerCase()}`}>
+                <a>
+                    {name}
+                </a>
+            </Link>
+        </motion.div>
+    )
+}
+
+export const NavlinkResponsive = ({ content }) => (
+
+    <>
+        {content.map((item: string) => {
+            return (
+                isPathMatchLink(item) 
+                ?
+                    <motion.div 
+                        key={item}
+                        variants={variants}
+                    >
+                        <motion.div 
+                            className={styles.inactiveLinkResponsive} 
+                            whileHover='inactiveHover' 
+                            whileTap='inactiveHover'
+                            variants={variants}
+                        >
+                            {item}
+                        </motion.div>
+                    </motion.div>
+                : 
+                    <motion.div 
+                        key={item}
+                        variants={variants}
+                    >
+                        {createLink(item)}
+                    </motion.div>
+            )
+        })}
+    </>
+)

@@ -8,19 +8,47 @@
     font-size: 1.8em;
 }
 
+%inactive-link {
+    cursor: none;
+    text-decoration: underline;
+    text-decoration-color: hsl(212, 97%, 59%);
+}
+
+%responsive-link {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
 .navlink {
     @extend %link-style;
 }
 
 .inactiveLink {
     @extend %link-style;
-    /*pointer-events: none;*/
-    cursor: none;
-    text-decoration: underline;
-    text-decoration-color: hsl(209, 97%, 59%);
+    @extend %inactive-link;
 }
 
-.inactiveLink:hover {
+.inactiveLink:hover, .inactiveLinkResponsive:hover {
     text-decoration: line-through;
     text-decoration-color: hsl(0, 97%, 59%);
+}
+
+.navlinkResponsive {
+    @extend %link-style;
+    @extend %responsive-link;
+}
+
+.inactiveLinkResponsive {
+    @extend %link-style;
+    @extend %inactive-link;
+    @extend %responsive-link;
+}
+
+@media only screen and (max-width: 768px) {
+    .inactiveLinkResponsive {
+        text-decoration-color: hsl(32, 97%, 59%);
+    }
 }
