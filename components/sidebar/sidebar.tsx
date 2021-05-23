@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
 import { motion, useCycle } from 'framer-motion'
 import { ToggleButton } from './togglebutton'
@@ -17,7 +17,7 @@ const sidebar = {
         }
     }),
     closed: {
-        clipPath: 'circle(25px at 93.5vw 5.5vh)',
+        clipPath: 'circle(1px at 100vw 0vh)',
         transition: {
             delay: 0.5,
             type: 'spring',
@@ -33,7 +33,7 @@ const useDimensions = (ref: any) => {
         height: 0
     })
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         dimensions.current.width = ref.current.offsetWidth
         dimensions.current.height = ref.current.offsetHeight
     }, [])

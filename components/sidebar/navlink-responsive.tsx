@@ -18,13 +18,13 @@ const isPathMatchLink = (name: string) => {
     return false
 }
 
-const variants = {
+const linkVariants = {
     opened: {
         y: 0,
         opacity: 1,
         transition: {
             y: {
-                stiffness: 100,
+                stiffness: 1000,
                 velocity: -100
             },
             staggerChildren: 0.07, 
@@ -60,7 +60,7 @@ const createLink = (name: string) => {
             className={styles.navlinkResponsive}
             whileHover='whileHover' 
             whileTap='whileHover'
-            variants={variants}
+            variants={linkVariants}
         >
             <Link href={`/${name.toLowerCase()}`}>
                 <a>
@@ -80,13 +80,13 @@ export const NavlinkResponsive = ({ content }) => (
                 ?
                     <motion.div 
                         key={item}
-                        variants={variants}
+                        variants={linkVariants}
                     >
                         <motion.div 
                             className={styles.inactiveLinkResponsive} 
                             whileHover='inactiveHover' 
                             whileTap='inactiveHover'
-                            variants={variants}
+                            variants={linkVariants}
                         >
                             {item}
                         </motion.div>
@@ -94,7 +94,7 @@ export const NavlinkResponsive = ({ content }) => (
                 : 
                     <motion.div 
                         key={item}
-                        variants={variants}
+                        variants={linkVariants}
                     >
                         {createLink(item)}
                     </motion.div>
