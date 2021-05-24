@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { motion } from 'framer-motion'
 
-import styles from '../styles/navlink.module.scss'
+import styles from '../styles/Navlink.module.scss'
 
 export default function Navlink({ content }) {
 

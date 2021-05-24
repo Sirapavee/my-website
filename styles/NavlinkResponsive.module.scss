@@ -22,16 +22,7 @@
     align-items: center;
 }
 
-.navlink {
-    @extend %link-style;
-}
-
-.inactiveLink {
-    @extend %link-style;
-    @extend %inactive-link;
-}
-
-.inactiveLink:hover, .inactiveLinkResponsive:hover {
+.inactiveLinkResponsive:hover {
     text-decoration: line-through;
     text-decoration-color: hsl(0, 97%, 59%);
 }
@@ -49,12 +40,13 @@
     font-size: 2.5rem;
 }
 
+.navlinkResponsive[data-is-opened=false], .inactiveLinkResponsive[data-is-opened=false] {
+    cursor: none;
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 768px) {
     .inactiveLinkResponsive {
         text-decoration-color: hsl(32, 97%, 59%);
     }
-}
-
-.nothing {
-    display: none;
 }

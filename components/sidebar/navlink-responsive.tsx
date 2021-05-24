@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { motion } from 'framer-motion'
 
-import styles from '../../styles/navlink.module.scss'
+import styles from '../../styles/NavlinkResponsive.module.scss'
 
 const isPathMatchLink = (name: string) => {
 
@@ -54,9 +54,11 @@ const linkVariants = {
     }
 }
 
-const createLink = (name: string) => {
+const createLink = (name: string, isButtonOpen: boolean) => {
+    
     return (
         <motion.div 
+            data-is-opened={isButtonOpen}
             className={styles.navlinkResponsive}
             whileHover='whileHover' 
             whileTap='whileHover'
@@ -71,7 +73,7 @@ const createLink = (name: string) => {
     )
 }
 
-export const NavlinkResponsive = ({ content }) => (
+export const NavlinkResponsive = ({ content, isButtonOpen }) => (
 
     <>
         {content.map((item: string) => {
@@ -83,6 +85,7 @@ export const NavlinkResponsive = ({ content }) => (
                         variants={linkVariants}
                     >
                         <motion.div 
+                            data-is-opened={isButtonOpen}
                             className={styles.inactiveLinkResponsive} 
                             whileHover='inactiveHover' 
                             whileTap='inactiveHover'
@@ -96,7 +99,7 @@ export const NavlinkResponsive = ({ content }) => (
                         key={item}
                         variants={linkVariants}
                     >
-                        {createLink(item)}
+                        {createLink(item, isButtonOpen)}
                     </motion.div>
             )
         })}

@@ -23,29 +23,42 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <motion.div 
+      exit={{
+        opacity: 0,
+      }} 
+      className={styles.container}
+    >
       <Head>
-        <title>Sirapavee Portfolio</title>
+        <title>Sirapavee</title>
         <meta name="description" content="My personal website" />
         <link rel="icon" href="/logo.svg" />
       </Head>
 
       <NavigationBar />
 
-      <main className={styles.main}>
-        <motion.div  
-          initial="hidden" 
-          animate="visible" 
-          variants={variants}
-        >
-          <h1 className={styles.title}>
-            I'm Sirapavee Ganyaporngul
-          </h1>
-          <h3 className={styles.subtitle}>
-            A graduated CS student
-          </h3>
-        </motion.div>
-      </main>
-    </div>
+      <motion.main  
+        initial="hidden" 
+        animate="visible" 
+        variants={variants}
+        className={styles.main}
+      >
+        <h1 className={styles.title}>
+          I'm Sirapavee Ganyaporngul
+        </h1>
+        <h3 className={styles.subtitle}>
+          A graduated CS student
+        </h3>
+      </motion.main>
+
+      <motion.footer 
+        initial="hidden" 
+        animate="visible" 
+        variants={variants}
+        className={styles.footer}
+      >
+        <p className={styles.copyright}>&copy; 2021 Sirapavee</p>
+      </motion.footer>
+    </motion.div>
   )
 }

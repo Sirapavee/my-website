@@ -4,15 +4,48 @@ import Link from 'next/link'
 
 import { motion } from 'framer-motion'
 
-import styles from '../styles/navbar.module.scss'
+import styles from '../styles/NavigationBar.module.scss'
 
 import Navlink from './navlink'
 import SideBar from './sidebar/sidebar'
 
+const variants = {
+    exit: {
+        opacity: 0,
+        y: -30,
+        transition: {
+            type: 'spring',
+            stiffness: 600,
+            damping: 20,
+        }
+    },
+    initial: {
+        opacity: 0,
+        y: -30,
+    },
+    animate: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: 'spring',
+            stiffness: 600,
+            damping: 20,
+            staggerChildren: 0.07,
+            delayChildren: 0.2
+        }
+    },
+}
+
 export default function NavigationBar() {
 
     return (
-        <nav className={styles.container}>
+        <motion.nav 
+            exit='exit'
+            initial='initial'
+            animate='animate'
+            variants={variants}
+            className={styles.container}
+        >
             <Link href='/' key='my-logo'>
                 <a className={styles.logo}>
                     <Image
@@ -27,6 +60,6 @@ export default function NavigationBar() {
                 <Navlink content={['About', 'Projects', 'Contact']} />
             </div>
             <SideBar />
-        </nav>
+        </motion.nav>
     )
 }

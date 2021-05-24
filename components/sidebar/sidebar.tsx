@@ -1,15 +1,15 @@
 import { useEffect, useRef } from 'react'
 
 import { motion, useCycle } from 'framer-motion'
-import { ToggleButton } from './togglebutton'
 
-import styles from '../../styles/sidebar.module.scss'
+import styles from '../../styles/Sidebar.module.scss'
 
 import { NavlinkResponsive } from './navlink-responsive'
+import { ToggleButton } from './togglebutton'
 
 const sidebar = {
     opened: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 93.5vw 5.5vh)`,
+        clipPath: `circle(${height * 2 + 200}px at 100vw 0vh)`,
         transition: {
             type: 'spring',
             stiffness: 20,
@@ -55,9 +55,9 @@ export default function SideBar() {
             className={styles.container}
         >
             <motion.div className={styles.background} variants={sidebar} />
-            <div className={styles.navbar}>
-                <NavlinkResponsive content={['About', 'Projects', 'Contact']} />
-            </div>
+            <motion.div className={styles.navbar}>
+                <NavlinkResponsive content={['About', 'Projects', 'Contact']} isButtonOpen={isOpen} />
+            </motion.div>
             <ToggleButton toggle={() => toggleOpen()} />
         </motion.nav>
     )
