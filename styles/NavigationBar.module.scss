@@ -13,6 +13,8 @@
     background-color: hsl(0, 0%, 100%);
     width: 100vw;
     height: 11vh;
+    z-index: 1;
+    background: transparent;
 }
 
 .navbar {
@@ -27,6 +29,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
     .navbar {
         display: none;
     }
@@ -35,4 +38,5 @@
         width: 4rem;
         height: 4rem;
     }
+    
 }

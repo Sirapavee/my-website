@@ -2,8 +2,7 @@
 
 %link-style {
     box-sizing: border-box;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 3rem;
     font-family: 'Bebas Neue';
     font-size: 1.8rem;
 }
@@ -53,8 +52,4 @@
     .inactiveLinkResponsive {
         text-decoration-color: hsl(32, 97%, 59%);
     }
-}
-
-.nothing {
-    display: none;
 }
