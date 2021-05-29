@@ -1,4 +1,3 @@
-import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -46,7 +45,7 @@ export default function NavigationBar() {
             variants={variants}
             className={styles.container}
         >
-            <Link href='/' key='my-logo'>
+            <Link href='/' key='my-logo' scroll={false}>
                 <a className={styles.logo}>
                     <Image
                         src='/logo.svg'

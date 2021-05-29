@@ -56,7 +56,7 @@ export default function Navlink({ content }) {
                             whileTap='whileHover'
                             variants={hoverVariants}
                         >
-                            <Link href={`/${item.toLowerCase()}`}>
+                            <Link href={`/${item.toLowerCase()}`} scroll={false}>
                                 {item}
                             </Link>
                         </motion.div>
