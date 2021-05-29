@@ -1,3 +1,4 @@
+import React from 'react'
 import Particles from 'react-particles-js'
 
 const PARTICLECONFIG: any = {
@@ -63,7 +64,7 @@ const PARTICLECONFIG: any = {
     detect_retina: true
 }
 
-const STYLES: any = {
+const STYLES: React.CSSProperties = {
     width: '100vw',
     height: '100vh',
     position: 'fixed',

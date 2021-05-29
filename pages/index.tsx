@@ -6,6 +6,7 @@ import styles from '../styles/Home.module.scss'
 
 import NavigationBar from '../components/navbar'
 import ParticleBackground from '../components/particles'
+// import TransitionBackground from '../components/transitionBg'
 
 export default function Home() {
   
@@ -36,11 +37,13 @@ export default function Home() {
         <link rel="icon" href="/logo.svg" />
       </Head>
 
+      {/* <TransitionBackground /> */}
+
       <NavigationBar />
 
       <motion.main  
-        initial="hidden" 
-        animate="visible" 
+        initial='hidden' 
+        animate='visible' 
         variants={variants}
         className={styles.main}
       >
@@ -53,8 +56,8 @@ export default function Home() {
       </motion.main>
 
       <motion.footer 
-        initial="hidden" 
-        animate="visible" 
+        initial='hidden' 
+        animate='visible' 
         variants={variants}
         className={styles.footer}
       >

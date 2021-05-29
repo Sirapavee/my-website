@@ -8,13 +8,14 @@
 .container {
     @extend %flex-center-row;
     justify-content: space-between;
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: hsl(0, 0%, 100%);
     width: 100vw;
     height: 11vh;
     z-index: 1;
     background: transparent;
+    backdrop-filter: blur(1px);
 }
 
 .navbar {
