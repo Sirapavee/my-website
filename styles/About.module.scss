@@ -1,0 +1,11 @@
+%flex-center-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.container {
+    @extend %flex-center-col;
+    height: 200vh;
+}
