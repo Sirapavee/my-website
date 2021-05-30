@@ -10,7 +10,7 @@
 %inactive-link {
     cursor: none;
     text-decoration: underline;
-    text-decoration-color: hsl(212, 97%, 59%);
+    text-decoration-color: #4cc9f0; //hsl(212, 97%, 59%)
 }
 
 %responsive-link {
@@ -32,7 +32,7 @@
 
 .inactiveLink:hover, .inactiveLinkResponsive:hover {
     text-decoration: line-through;
-    text-decoration-color: hsl(0, 97%, 59%);
+    text-decoration-color: #f72585; //hsl(0, 97%, 59%)
 }
 
 .navlinkResponsive {
