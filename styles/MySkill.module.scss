@@ -1,0 +1,69 @@
+%box-size {
+    width: 45vh;
+    height: 45vh;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+}
+
+.title {
+    font-size: 1.4rem;
+    position: relative;
+    text-align: center;
+    padding: 2% 0 2% 0;
+    color: white;
+}
+
+.langBox {
+    @extend %box-size;
+    background-color: #7209b7;
+}
+
+.technicBox {
+    @extend %box-size;
+    background-color: #4361ee;
+}
+
+.softBox {
+    @extend %box-size;
+    background-color: #4cc9f0;
+}
+
+.pillBox {
+    background-color: #edf2f4;
+    border-radius: 30px;
+    text-align: center;
+    padding: 5px 10px;
+    margin: 4px 2px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    transform: scale(0.9);
+}
+
+.pillContainer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    %box-size {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}

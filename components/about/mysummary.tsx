@@ -45,7 +45,7 @@ const portraitVariants = {
         opacity: 1,
         scale: 1,
         transition: {
-            delay: 0.3,
+            delay: 0.5,
         }
     }
 }
@@ -57,7 +57,7 @@ const summaryVariants = {
     animate: {
         opacity: 1,
         transition: {
-            delay: 0.3,
+            delay: 0.5,
         }
     }
 }

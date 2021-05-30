@@ -3,7 +3,8 @@ import { useInView } from 'react-intersection-observer'
 
 import styles from '../../styles/MyExperience.module.scss'
 
-import { EXPERIENCES } from '../../public/experiences'
+import BannerVertical from './bannerVertical'
+import { EXPERIENCES } from '../../data/experiences'
 
 const gridContainerVariants = {
     visible: {
@@ -58,6 +59,7 @@ export default function MyExperience() {
 
     return (
         <section className={styles.container}>
+            <BannerVertical text={'Experience'} />
             <motion.div
                 ref={ref}
                 initial={'hidden'}
@@ -81,7 +83,7 @@ export default function MyExperience() {
                             <h4 className={styles.elementSubtitle}>
                                 {exp.period}, {exp.for}
                             </h4>
-                            <p>
+                            <p className={styles.elementDescription}>
                                 {exp.description}
                             </p>
                         </motion.li>
