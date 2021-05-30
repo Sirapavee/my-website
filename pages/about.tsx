@@ -18,7 +18,7 @@ export default function About() {
             className={styles.container}
         >
             <Head>
-                <title>Sirapavee</title>
+                <title>About Me</title>
                 <meta name="description" content="About me" />
                 <link rel="icon" href="/logo.svg" />
             </Head>
