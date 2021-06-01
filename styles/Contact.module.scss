@@ -1,0 +1,52 @@
+%flex-center-col {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    @extend %flex-center-col;
+    width: 100vw;
+    height: 89vh;
+    margin-top: 11vh;
+    padding-bottom: 11vh;
+}
+
+.title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.hrLine {
+    margin: 1% 0 1% 0;
+    width: 60vw;
+    height: 0.5vh;
+    background-color: #f72585;
+}
+
+.socialContainer {
+    @extend %flex-center-col;
+    position: relative;
+    flex-direction: row;
+    width: 40vw;
+}
+
+.icon {
+    margin: 0 3% 0 3%;
+}
+
+@media only screen and (max-width: 426px) {
+
+    .hrLine {
+        width: 90vw;
+    }
+
+    .socialContainer {
+        width: 70vw;
+    }
+
+}
