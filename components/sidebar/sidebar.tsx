@@ -41,10 +41,24 @@ const useDimensions = (ref: any) => {
     return dimensions.current
 }
 
-export default function SideBar() {
+interface props {
+    signal?: Function
+}
+
+const defaultProps: props = {
+    signal: null
+}
+
+export default function SideBar({ signal }: props) {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null)
     const { height } = useDimensions(containerRef)
+
+    useEffect(() => {
+        if (signal != null) {
+            signal(isOpen)
+        }
+    }, [isOpen])
 
     return (
         <motion.nav
@@ -62,3 +76,5 @@ export default function SideBar() {
         </motion.nav>
     )
 }
+
+SideBar.defaultProps = defaultProps

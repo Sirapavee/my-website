@@ -35,7 +35,15 @@ const variants = {
     },
 }
 
-export default function NavigationBar() {
+interface props {
+    signal?: Function
+}
+
+const defaultProps: props = {
+    signal: null
+}
+
+export default function NavigationBar({ signal }: props) {
 
     return (
         <motion.nav 
@@ -58,7 +66,9 @@ export default function NavigationBar() {
             <div className={styles.navbar}>
                 <Navlink content={['About', 'Projects', 'Contact']} />
             </div>
-            <SideBar />
+            <SideBar signal={signal} />
         </motion.nav>
     )
 }
+
+NavigationBar.defaultProps = defaultProps
