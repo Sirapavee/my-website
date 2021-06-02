@@ -7,6 +7,7 @@ import styles from '../styles/Contact.module.scss'
 
 import NavigationBar from '../components/navbar'
 import ContactSection from '../components/contact/contactComponent'
+import ParticleFallBackground from '../components/particleFall'
 
 export default function Contact() {
 
@@ -31,6 +32,7 @@ export default function Contact() {
 
             <NavigationBar signal={signalOpen} />
             <ContactSection status={openStatus} />
+            <ParticleFallBackground />
         </motion.div>
     )
 }
