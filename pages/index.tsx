@@ -32,7 +32,7 @@ export default function Home() {
       className={styles.container}
     >
       <Head>
-        <title>Sirapavee</title>
+        <title>Home</title>
         <meta name="description" content="My personal website" />
         <link rel="icon" href="/logo.svg" />
       </Head>

@@ -52,7 +52,7 @@ const softSkillVariants = {
         opacity: 1,
     },
     hidden: {
-        y: -100,
+        y: 100,
         opacity: 0,
     },
 }
