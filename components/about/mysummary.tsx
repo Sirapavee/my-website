@@ -141,9 +141,19 @@ export default function MySummary() {
                         About Me
                     </h1>
                     <p className={styles.summary}>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Recusandae quidem quo tenetur veniam non. 
-                        Ducimus impedit quis libero pariatur dolorem, nam modi debitis ab ex, expedita corrupti obcaecati ut eum.
+                        Hello, I'm Sirapavee Ganyaporngul: a recently graduated CS student from Chulalongkorn University and a freelance translator. 
+                        I love to create a fluid website with animation and beautiful UX/UI in it, which users can have fun interact with it.
+                        You can find my cv and Github profile on the contact page.
+                    </p>
+                    <p className={styles.summary}>
+                        I've learned about Algorithms, Image Processing, CV, DL, and ML throughout four years of study. 
+                        My senior project is airplane shadow removal using GANs, which I presented at ICIEA 2021 and newly published on the IEEE Explore website.
+                    </p>
+                    <p className={styles.summary}>
+                        However, I currently interest in the Front-end part of web development. 
+                        The motivation is I love a fluid website design, which has good looking and UX/UI. 
+                        So that is the reason that encourages me to get on this path. 
+                        In the future, I'm looking for the opportunity to be a full-stack web developer.
                     </p>
                 </motion.article>
             </div>

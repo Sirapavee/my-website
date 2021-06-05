@@ -54,7 +54,8 @@
 }
 
 .profileSummary {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-column: 5 / span 4;
     grid-row: 2 / span 4;
     place-items: start start;
@@ -75,10 +76,17 @@
 }
 
 .summary {
-    margin: 0;
+    margin: 1% 0 1% 0;
     line-height: 1.2;
-    font-size: 2rem;
+    font-size: 1.2rem;
     text-align: left;
+
+    a {
+        font-weight: 500;
+        text-decoration: underline;
+        text-decoration-color: #4cc9f0;
+    }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -112,7 +120,7 @@
     }
 
     .profileSummary {
-        width: 80%;
+        width: 90%;
         height: 40%;
         margin-top: 1%;
     }
@@ -148,6 +156,14 @@
 
     .title {
         margin-bottom: 2%;
+    }
+
+}
+
+@media only screen and (max-width: 321px) {
+    
+    .summary {
+        font-size: 1.1rem;
     }
 
 }
