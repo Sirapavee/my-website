@@ -78,3 +78,5 @@ export default function SideBar({ signal }: props) {
 }
 
 SideBar.defaultProps = defaultProps
+
+export { useDimensions }
