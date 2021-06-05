@@ -86,7 +86,7 @@ export default function ContactSection({ status }) {
                 variants={socialVariants}
                 className={styles.socialContainer}
             >
-                <ImageLink href={'#'} keyword={'CV'} src={'/cv.svg'} alt={'my_cv-icon'} />
+                <ImageLink href={'https://drive.google.com/file/d/1NcfOd9HUfA9HPx_JyEMj1bhLS-m7jiTz/view?usp=sharing'} keyword={'CV'} src={'/cv.svg'} alt={'my_cv-icon'} />
                 <ImageLink href={'mailto:sirapavee@gmail.com'} keyword={'Email'} src={'/email.svg'} alt={'email-icon'} />
                 <ImageLink href={'https://github.com/Sirapavee'} keyword={'Github'} src={'/github.svg'} alt={'github-icon'} />
                 <ImageLink href={'https://www.facebook.com/zentinel2k/'} keyword={'Facebook'} src={'/facebook.svg'} alt={'facebook-icon'} />
