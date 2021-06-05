@@ -6,6 +6,8 @@ import { useInView } from 'react-intersection-observer'
 
 import styles from '../../styles/MySummary.module.scss'
 
+import HintNavigation from '../../components/hintNav'
+
 const circleVariants1 = {
     initial: {
         y: -50,
@@ -143,7 +145,7 @@ export default function MySummary() {
                     <p className={styles.summary}>
                         Hello, I'm Sirapavee Ganyaporngul: a recently graduated CS student from Chulalongkorn University and a freelance translator. 
                         I love to create a fluid website with animation and beautiful UX/UI in it, which users can have fun interact with it.
-                        You can find my cv and Github profile on the contact page.
+                        You can find my CV and Github profile on the contact page.
                     </p>
                     <p className={styles.summary}>
                         I've learned about Algorithms, Image Processing, CV, DL, and ML throughout four years of study. 
@@ -157,6 +159,7 @@ export default function MySummary() {
                     </p>
                 </motion.article>
             </div>
+            <HintNavigation />
         </section>
     )
 }

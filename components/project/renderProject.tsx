@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 import styles from '../../styles/IndividualProject.module.scss'
+import HintNavigation from '../../components/hintNav'
 
 interface props {
     status: boolean,
@@ -257,6 +258,7 @@ export default function IndividualProject({ status, keyword, img, imgAlt, wide, 
                     Certificate: &nbsp; <a href={certificate} target='_blank'>Here</a>
                 </p>
             </motion.section>
+            <HintNavigation id={keyword} />
         </motion.section>
     )
 }

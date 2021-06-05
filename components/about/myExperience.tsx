@@ -5,6 +5,7 @@ import styles from '../../styles/MyExperience.module.scss'
 
 import BannerVertical from './bannerVertical'
 import { EXPERIENCES } from '../../data/experiences'
+import HintNavigation from '../../components/hintNav'
 
 const gridContainerVariants = {
     visible: {
@@ -90,6 +91,7 @@ export default function MyExperience() {
                     )
                 })}
             </motion.div>
+            <HintNavigation />
         </section>
     )
 }
