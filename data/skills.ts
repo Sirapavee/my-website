@@ -5,7 +5,7 @@ const SKILLS: Object[] = [
         skills: {
             'Programming Languages': [
                 'Python', 'JS', 'TS', 
-                'HTML', 'CSS', 'Java', 'C++', 'C#'
+                'HTML', 'CSS', 'Java',
             ],
             'Industrial Knowledge': [
                 'ML', 'DL', 'IP',

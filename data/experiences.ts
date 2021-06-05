@@ -12,7 +12,7 @@
         title: 'Freelance Translator',
         period: '2019 - Present',
         for: 'Self Employ',
-        description: '---description here---'
+        description: "I'm open to a TH/EN translation job. You can hire me to translate your document."
     },
     {
         id: '003',
