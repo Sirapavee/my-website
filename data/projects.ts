@@ -21,7 +21,7 @@ const PROJECTS: Object[] = [
         date: '2020 - 2021',
         description: 'This work is already accepted and presented at the 8th International Conference on Industrial Engineering and Applications (ICIEA 2021) on 23-26 April 2021 at Kyoto (remote conference). It is also a senior project of my final year student at Chulalongkorn University.',
         link: 'https://ieeexplore.ieee.org/document/9436794',
-        certificate: '#'
+        certificate: 'https://drive.google.com/file/d/1d6qZwHKSGRqHdE-4tOFTGcXivIw-pQZ9/view?usp=sharing'
     },
     {
         id: '3',
