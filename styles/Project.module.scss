@@ -2,10 +2,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .container {
     @extend %flex-center-col;
-    height: 100vh;
+    height: 900vh;
 }
