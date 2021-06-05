@@ -4,12 +4,12 @@ const SKILLS: Object[] = [
         id: 'technical',
         skills: {
             'Programming Languages': [
-                'Python', 'JS', 'TS', 
+                'Python', 'Javascript', 'Typescript', 
                 'HTML', 'CSS', 'Java',
             ],
             'Industrial Knowledge': [
-                'ML', 'DL', 'IP',
-                'CV', 'Web Dev'
+                'Machine Learning', 'Deep Learning', 'Image Processing',
+                'Computer Vision', 'Web Development'
             ],
             'Frameworks': [
                 'React', 'Next.js', 'GANs'

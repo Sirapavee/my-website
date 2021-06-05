@@ -8,7 +8,8 @@ const PROJECTS: Object[] = [
         name: 'Personal Portfolio Website',
         tech: 'Next.js, React, Typescript',
         date: 'May 2021',
-        description: "To illustrate my front-end web development and other skills, I have created this portfolio website for them. I develop this website using Next.js, React, and Framer motion for animation and page transition. The website contains four pages: Home, About, Projects, and Contact. The Home page will briefly introduce me. Next, the About page will discuss my in-depth including history, experiences, and skills. Subsequently, the Projects page will show you my projects while I'm studying at the university. Finally, the Contact page provides you my CV and social links, which you can reach me."
+        description: "To illustrate my front-end web development and other skills, I have created this portfolio website for them. I develop this website using Next.js, React, and Framer motion for animation and page transition. The website contains four pages: Home, About, Projects, and Contact. The Home page will briefly introduce me. Next, the About page will discuss my in-depth including history, experiences, and skills. Subsequently, the Projects page will show you my projects while I'm studying at the university. Finally, the Contact page provides you my CV and social links, which you can reach me.",
+        link: 'https://github.com/Sirapavee/my-website'
     },
     {
         id: '2',
@@ -43,7 +44,8 @@ const PROJECTS: Object[] = [
         name: 'Price Prediction using Machine Learning',
         tech: 'Python, Pandas, Numpy',
         date: '2019',
-        description: "I'm also interested in Machine Learning, which encourages me to enroll in this course. I mostly learned about its mathematical perspective. Then I was assigned to develop the price prediction project. I picked the Linear Regression and Neural Network to create the prediction model, which involved the data cleaning process. After that, I use Google Colab to construct it in the Python environment and plot the graphs to compare the two models using Pandas."
+        description: "I'm also interested in Machine Learning, which encourages me to enroll in this course. I mostly learned about its mathematical perspective. Then I was assigned to develop the price prediction project. I picked the Linear Regression and Neural Network to create the prediction model, which involved the data cleaning process. After that, I use Google Colab to construct it in the Python environment and plot the graphs to compare the two models using Pandas.",
+        link: 'https://colab.research.google.com/drive/1eYPIH9rwOnArPK34YxCB-BidXyQwzoUq?usp=sharing'
     },
     {
         id: '5',
@@ -54,7 +56,8 @@ const PROJECTS: Object[] = [
         name: 'AI Bot Contest Group Project',
         tech: 'Python',
         date: '2019',
-        description: "The AI course group project has a lot of freedom to chose the topic, in which my team comes up with Bot contest amongst members. Each group member has to create their agent to play the game: mysterious treasure, which bot has to accumulate many points to beat its opponent. I develop my bot using minimax (depth=6) with alpha-beta pruning. The idea behind this is I want to collect many points as possible while decreasing the opponent's score, which is the optimal way. The minimax method can generate numerous possible routes of movement, which hurts the performance. So I adopt the alpha-beta pruning to cut the low score yielding node out. The heuristic function is the total accumulated score from each path."
+        description: "The AI course group project has a lot of freedom to chose the topic, in which my team comes up with Bot contest amongst members. Each group member has to create their agent to play the game: mysterious treasure, which bot has to accumulate many points to beat its opponent. I develop my bot using minimax (depth=6) with alpha-beta pruning. The idea behind this is I want to collect many points as possible while decreasing the opponent's score, which is the optimal way. The minimax method can generate numerous possible routes of movement, which hurts the performance. So I adopt the alpha-beta pruning to cut the low score yielding node out. The heuristic function is the total accumulated score from each path.",
+        link: 'https://github.com/Sirapavee/AI-Bot-Contest'
     },
     {
         id: '6',
@@ -65,7 +68,8 @@ const PROJECTS: Object[] = [
         name: 'People Tracking Project',
         tech: 'Python, OpenCV',
         date: '2019',
-        description: "The most cross-course project I ever made in my junior year involved the Image Processing, Requirement Engineering, and Software Engineering course. My group wants to develop a bus queue management system in my university called CU PopQ. It required us to create the Software Requirement Specification (SRS), collect users' requirements, does the system design by creating diagrams, and design a mock-up application. The many courses mean the different group members but the same core members, which are my other two best friends (Mafeung and Bell). I'm the team lead responsible for coordination between members, help building SRS, creating diagrams, and developing the people tracking system. The tracking system idea is mainly the image subtraction, which can detect moving people by subtracting their frame with the plain background frame. After that, I calculate the centroid of them for counting purpose. The in-out counting is done by draw a threshold line that added/subtracted the moving in/out centroid. I feel that I get tons of skills by doing this project, and I'm proud of it."
+        description: "The most cross-course project I ever made in my junior year involved the Image Processing, Requirement Engineering, and Software Engineering course. My group wants to develop a bus queue management system in my university called CU PopQ. It required us to create the Software Requirement Specification (SRS), collect users' requirements, does the system design by creating diagrams, and design a mock-up application. The many courses mean the different group members but the same core members, which are my other two best friends (Mafeung and Bell). I'm the team lead responsible for coordination between members, help building SRS, creating diagrams, and developing the people tracking system. The tracking system idea is mainly the image subtraction, which can detect moving people by subtracting their frame with the plain background frame. After that, I calculate the centroid of them for counting purpose. The in-out counting is done by draw a threshold line that added/subtracted the moving in/out centroid. I feel that I get tons of skills by doing this project, and I'm proud of it.",
+        link: 'https://github.com/Sirapavee/CU-POP-Q'
     },
     {
         id: '7',
@@ -76,7 +80,8 @@ const PROJECTS: Object[] = [
         name: 'OCR Project',
         tech: 'Python, OpenCV',
         date: '2019',
-        description: 'In junior year, I enroll in the Image Processing course, which has the term project: OCR from given images. I use the thresholding technique to differentiate characters from the background then draw a green rectangle around it to indicate the letter area. The project was developed in Python using the OpenCV library.'
+        description: 'In junior year, I enroll in the Image Processing course, which has the term project: OCR from given images. I use the thresholding technique to differentiate characters from the background then draw a green rectangle around it to indicate the letter area. The project was developed in Python using the OpenCV library.',
+        link: 'https://github.com/Sirapavee/Image-Processing-Term-Project'
     },
     {
         id: '8',
@@ -98,7 +103,8 @@ const PROJECTS: Object[] = [
         name: 'Airplane Ticket Booking Application',
         tech: 'Java, JavaFX',
         date: '2018',
-        description: 'The application is the final project of the Programming Technique course, in which I use Java and JavaFX to create GUI. It contains three pages: login, flight information, and booking page. Users can choose a destination, book and cancel their flight, as well as inspect their booking history.'
+        description: 'The application is the final project of the Programming Technique course, in which I use Java and JavaFX to create GUI. It contains three pages: login, flight information, and booking page. Users can choose a destination, book and cancel their flight, as well as inspect their booking history.',
+        link: 'https://github.com/Sirapavee/Airplane-Ticket-Booking-App',
     },
 ]
 
