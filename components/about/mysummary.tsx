@@ -155,7 +155,7 @@ export default function MySummary() {
                         However, I currently interest in the Front-end part of web development. 
                         The motivation is I love a fluid website design, which has good looking and UX/UI. 
                         So that is the reason that encourages me to get on this path. 
-                        In the future, I'm looking for the opportunity to be a full-stack web developer.
+                        In the future, I'm looking forward to being a professional in the front-end role in the web design industry.
                     </p>
                 </motion.article>
             </div>
