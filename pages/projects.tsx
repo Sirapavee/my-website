@@ -8,6 +8,7 @@ import styles from '../styles/Project.module.scss'
 import NavigationBar from '../components/navbar'
 import IndividualProject from '../components/project/renderProject'
 import { PROJECTS } from '../data/projects'
+import ScrollArow from '../components/scrollToTop'
 
 export default function Project() {
 
@@ -44,7 +45,7 @@ export default function Project() {
                     />
                 )
             })}
-
+            <ScrollArow status={openStatus} />
         </motion.div>
     )
 }

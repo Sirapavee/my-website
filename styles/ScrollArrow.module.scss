@@ -1,0 +1,25 @@
+.container {
+    width: 100vw;
+    height: 88vh;
+    margin: 81px 0 0 0;
+    position: fixed;
+    display: flex;
+}
+
+.scrollTop {
+    position: absolute;
+    display: flex;
+    bottom: 2%;
+    right: 2%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.scrollTop[data-visible=true] {
+    display: flex;
+}
+
+.scrollTop[data-visible=false] {
+    display: none;
+}
