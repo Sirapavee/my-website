@@ -5,3 +5,4 @@ This portfolio website was intentionally created for skill demonstration, work d
 - Web Development Technologies (HTML, CSS, TS)
 - Front-end frameworks (React JS, Next JS)
 - Responsive Web Design
+- Animation library (Framer motion)
