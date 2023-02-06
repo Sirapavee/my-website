@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import styles from '../../styles/Contact.module.scss'
+import styles from 'styles/Contact.module.scss'
 
 export default function ImageLink({ href, keyword, src, alt }) {
     return (

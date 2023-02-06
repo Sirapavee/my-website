@@ -2,11 +2,11 @@ import Head from 'next/head'
 
 import { motion } from 'framer-motion'
 
-import styles from '../styles/Home.module.scss'
+import styles from 'styles/Home.module.scss'
 
-import NavigationBar from '../components/navbar'
-import ParticleBackground from '../components/particles'
-// import TransitionBackground from '../components/transitionBg'
+import NavigationBar from 'components/navbar'
+import ParticleBackground from 'components/particles'
+// import TransitionBackground from 'components/transitionBg'
 
 export default function Home() {
   
@@ -51,7 +51,7 @@ export default function Home() {
           I'm Sirapavee Ganyaporngul
         </h1>
         <h3 className={styles.subtitle}>
-          A graduated CS student &amp; freelance translator
+          A Frontend Web Developer &amp; freelance translator
         </h3>
       </motion.main>
 
@@ -61,7 +61,7 @@ export default function Home() {
         variants={variants}
         className={styles.footer}
       >
-        <p className={styles.copyright}>&copy; 2021 Sirapavee</p>
+        <p className={styles.copyright}>&copy; 2023 Sirapavee</p>
       </motion.footer>
       <ParticleBackground />
     </motion.div>

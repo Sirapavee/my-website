@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react'
 
 import { motion, useCycle } from 'framer-motion'
 
-import styles from '../../styles/Sidebar.module.scss'
+import styles from 'styles/Sidebar.module.scss'
 
 import { NavlinkResponsive } from './navlink-responsive'
 import { ToggleButton } from './togglebutton'

@@ -3,12 +3,12 @@ import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-import styles from '../styles/Project.module.scss'
+import styles from 'styles/Project.module.scss'
 
-import NavigationBar from '../components/navbar'
-import IndividualProject from '../components/project/renderProject'
-import { PROJECTS } from '../data/projects'
-import ScrollArow from '../components/scrollToTop'
+import NavigationBar from 'components/navbar'
+import IndividualProject from 'components/project/renderProject'
+import { PROJECTS } from 'data/projects'
+import ScrollArow from 'components/scrollToTop'
 
 export default function Project() {
 

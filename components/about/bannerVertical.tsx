@@ -2,7 +2,7 @@ import { motion, useTransform, useViewportScroll } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useState, useEffect, useRef } from 'react'
 
-import styles from '../../styles/BannerVertical.module.scss'
+import styles from 'styles/BannerVertical.module.scss'
 
 const bannerVariants = {
     hidden: {

@@ -3,11 +3,11 @@ import Head from 'next/head'
 import { motion } from 'framer-motion'
 import { useState } from 'react'
 
-import styles from '../styles/Contact.module.scss'
+import styles from 'styles/Contact.module.scss'
 
-import NavigationBar from '../components/navbar'
-import ContactSection from '../components/contact/contactComponent'
-import ParticleFallBackground from '../components/particleFall'
+import NavigationBar from 'components/navbar'
+import ContactSection from 'components/contact/contactComponent'
+import ParticleFallBackground from 'components/particleFall'
 
 export default function Contact() {
 

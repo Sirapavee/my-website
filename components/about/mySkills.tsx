@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import styles from '../../styles/MySkill.module.scss'
+import styles from 'styles/MySkill.module.scss'
 
 import BannerHorizontal from './bannerHorizontal'
 import SkillBox from './skillBox'
-import { SKILLS } from '../../data/skills'
+import { SKILLS } from 'data/skills'
 
 const containerVariants = {
     visible: {

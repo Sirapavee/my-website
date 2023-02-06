@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { motion } from 'framer-motion'
 
-import styles from '../../styles/Togglebutton.module.scss'
+import styles from 'styles/Togglebutton.module.scss'
 
 const Path = props => (
     <motion.path

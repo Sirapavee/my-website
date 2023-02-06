@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
 
-import styles from '../../styles/IndividualProject.module.scss'
-import HintNavigation from '../../components/hintNav'
+import styles from 'styles/IndividualProject.module.scss'
+import HintNavigation from 'components/hintNav'
 
 interface props {
     status: boolean,

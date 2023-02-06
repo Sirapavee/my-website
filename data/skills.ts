@@ -4,18 +4,18 @@ const SKILLS: Object[] = [
         id: 'technical',
         skills: {
             'Programming Languages': [
-                'Python', 'Javascript', 'Typescript', 
-                'HTML', 'CSS', 'Java',
+                'Javascript', 'Typescript', 
+                'HTML', 'CSS', 'Java', 'Python',
             ],
             'Industrial Knowledge': [
                 'Machine Learning', 'Deep Learning', 'Image Processing',
-                'Computer Vision', 'Web Development'
+                'Computer Vision', 'Web Development', 'Unit Testing',
             ],
             'Frameworks': [
-                'React', 'Next.js', 'GANs'
+                'React', 'Next.js', 'GANs', 'Jest',
             ],
             'Tools': [
-                'Figma', 'MS Word', 'MS Powerpoint'
+                'Figma',
             ],
         }
     },
@@ -23,7 +23,7 @@ const SKILLS: Object[] = [
         id: 'language',
         skills: {
             'Language': [
-                'Thai', 'English'
+                'Thai', 'English', 'French (elementary)'
             ]
         }
     },

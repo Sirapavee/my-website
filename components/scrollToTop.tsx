@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useState, useEffect } from 'react'
 
-import styles from '../styles/ScrollArrow.module.scss'
+import styles from 'styles/ScrollArrow.module.scss'
 
 interface props {
     status: boolean,

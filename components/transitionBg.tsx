@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-import styles from '../styles/TransitionBackground.module.scss'
+import styles from 'styles/TransitionBackground.module.scss'
 
 const blackBox = {
     initial: {

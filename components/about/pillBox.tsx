@@ -1,4 +1,4 @@
-import styles from '../../styles/MySkill.module.scss'
+import styles from 'styles/MySkill.module.scss'
 
 export default function PillBox({ data, categories }) {
     return (

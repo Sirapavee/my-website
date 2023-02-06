@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import styles from '../../styles/MyExperience.module.scss'
+import styles from 'styles/MyExperience.module.scss'
 
 import BannerVertical from './bannerVertical'
-import { EXPERIENCES } from '../../data/experiences'
-import HintNavigation from '../../components/hintNav'
+import { EXPERIENCES } from 'data/experiences'
+import HintNavigation from 'components/hintNav'
 
 const gridContainerVariants = {
     visible: {

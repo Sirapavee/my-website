@@ -4,9 +4,9 @@ import { useState, useRef, useEffect } from "react"
 import { motion, useViewportScroll, useTransform } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
-import styles from '../../styles/MySummary.module.scss'
+import styles from 'styles/MySummary.module.scss'
 
-import HintNavigation from '../../components/hintNav'
+import HintNavigation from 'components/hintNav'
 
 const circleVariants1 = {
     initial: {
@@ -143,19 +143,19 @@ export default function MySummary() {
                         About Me
                     </h1>
                     <p className={styles.summary}>
-                        Hello, I'm Sirapavee Ganyaporngul: a recently graduated CS student from Chulalongkorn University and a freelance translator. 
+                        Hello, I'm Sirapavee Ganyaporngul: a graduated CS student from Chulalongkorn University, frontend Web Developer and freelance translator. 
                         I love to create a fluid website with animation and beautiful UX/UI in it, which users can have fun interact with it.
                         You can find my CV and Github profile on the contact page.
                     </p>
                     <p className={styles.summary}>
                         I've learned about Algorithms, Image Processing, CV, DL, and ML throughout four years of study. 
-                        My senior project is airplane shadow removal using GANs, which I presented at ICIEA 2021 and newly published on the IEEE Explore website.
+                        My senior project is airplane shadow removal using GANs, which I presented at ICIEA 2021 and it was published on <a href='https://ieeexplore.ieee.org/document/9436794'>IEEE</a>.
                     </p>
                     <p className={styles.summary}>
                         However, I currently interest in the Front-end part of web development. 
                         The motivation is I love a fluid website design, which has good looking and UX/UI. 
                         So that is the reason that encourages me to get on this path. 
-                        In the future, I'm looking forward to being a professional in the front-end role in the web design industry.
+                        In the future, I'm looking forward to being a professional in the front-end role in the web development industry.
                     </p>
                 </motion.article>
             </div>

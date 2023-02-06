@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 
 import { motion } from 'framer-motion'
 
-import styles from '../../styles/NavlinkResponsive.module.scss'
+import styles from 'styles/NavlinkResponsive.module.scss'
 
 const isPathMatchLink = (name: string) => {
 
