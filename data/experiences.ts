@@ -1,6 +1,21 @@
  const EXPERIENCES: Object[] = [
     {
         id: '001',
+        title: 'Asscociate Developer',
+        period: '[2/23 - present]',
+        for: 'Maxbit Digital Asset',
+        description: `
+            Being a primary frontend developer in the team (in-house), 
+            Develop, maintain, and improve rhe company's main website
+            and admin portal (backend UI) code, 
+            Help review and improve website UX/UI design, 
+            Develop a company-promoting website, including responsive UI
+            (before launching), 
+            Collaborating with the Vietnam outsourcing developers' team
+        `,
+    },
+	{
+        id: '002',
         title: 'Software Engineer, Asscociate',
         period: '[7/21 - 1/23]',
         for: 'Pomelo Fashion',
@@ -11,7 +26,7 @@
         `,
     },
     {
-        id: '002',
+        id: '003',
         title: 'Freelance Translator',
         period: '[2019 - Present]',
         for: 'Self Employ',
